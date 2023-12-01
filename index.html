@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <div class="heading">
+                <a href="#home">Tech Shop</a>
+                <button class="hamburger" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li><button onclick="hideSidebar()">X</button></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#why">Why Us ?</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>
+                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                </ul>
+                <ul class="mainbar">
+                    <li><a href="#home">Home</a></li>|
+                    <li><a href="#shop">Shop</a></li>|
+                    <li><a href="#why">Why Us ?</a></li>|
+                    <li><a href="#contact">Contact Us</a></li>|
+                    <li><a href="#about">About Us</a></li>|
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>|
+                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="show">
+                <div class="text">
+                    <h1>Welcome To Our</h1>
+                    <h2>TechShop</h2>
+                    <p>ppppppppppppppppppp</p>
+                </div>
+                <!--This is for image -->
+                <div class="image"><a href="#shop"><img src="img/show.jpg" alt="desktop"></a></div>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="heading"><h1>OUR LATEST PRODUCTS</h1></div>
+            <div class="container">
+                <div class="box">
+                    <h2>Speaker</h2>
+                    <img src="speaker.png" alt="speaker">
+                    <p class="price">Buy at only: <span>$1200</span></p>
+                </div>
+                <div class="box">
+                    <h2>Keyboard</h2>
+                    <img src="keyboard.png" alt="keyboard">
+                    <p class="price">Buy at only: <span>$1600</span></p>
+                </div>
+                <div class="box">
+                    <h2>Mouse</h2>
+                    <img src="mouse.png" alt="mouse">
+                    <p class="price">Buy at only: <span>$1500</span></p>
+                </div>
+                <div class="box">
+                    <h2>Router</h2>
+                    <img src="router.png" alt="router">
+                    <p class="price">Buy at only: <span>$2000</span></p>
+                </div>
+                <div class="box">
+                    <h2>RAM</h2>
+                    <img src="ram.png" alt="ram">
+                    <p class="price">Buy at only: <span>$2000</span></p>
+                </div>
+                <div class="box">
+                    <h2>CD</h2>
+                    <img src="cd.png" alt="cd">
+                    <p class="price">Buy at only: <span>$1000</span></p>
+                </div>
+                <div class="box">
+                    <h2>SSD</h2>
+                    <img src="ssd.png" alt="ssdd">
+                    <p class="price">Buy at only: <span>$1000</span></p>
+                </div>
+                <div class="box">
+                    <h2>Camera</h2>
+                    <img src="camera.png" alt="camera">
+                    <p class="price">Buy at only: <span>$1000</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+        </section>
+        <section class="search">
+            <div class="search-container">
+                <h1>Search with your heart's content</h1>
+                <input type="text" class="search-input" placeholder="Enter your search query"><p><br></p>
+                <button class="search-button">Search</button>
+              </div>
+        </section>
+        <section class="contact">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="column">
+                <h3>Column 1</h3>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Column 2</h3>
+                <ul><li>Link 4</li>
+                    <li>Link 5</li>
+                    <li>Link 6</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Column 3</h3>
+                <ul>
+                    <li>Link 7</li>
+                    <li>Link 8</li>
+                    <li>Link 9</li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+        </script>
+    </body>
+</html>

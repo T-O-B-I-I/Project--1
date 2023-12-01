@@ -1,0 +1,140 @@
+* *::after *::before{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    box-sizing:border-box;
+  }
+  :root{
+    --bg-color: #E3E6E6;
+    --text-color: #fff;
+    --accent-color:#FEBD69;
+    --navbar-color:#232F3E;
+    --big-font: 3rem;
+    --h2-font: 2.5rem;
+    --p-font: 1.5rem;
+    --font: 'Poppins', sans-serif;
+  }
+  body{
+    background-color:var(--bg-color);
+    font-family: var(--font);
+  }
+  h1{
+    font-size:var(--big-font);
+  }
+  h2{
+    font-size:var(--h2-font);
+  }
+  p{
+    font-size: var(--p-font);
+  }
+  nav,div,.mainbar,.hamburger{
+    padding:1rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    border-radius:1rem;
+  }
+  a{
+    text-decoration:none;
+    color:var(--text-color);
+  }
+  ul{
+    list-style:none;
+  }
+  header{
+    height:auto;
+  }
+  /*navbar*/
+  .heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--accent-color);
+    height:4rem;
+    border-radius:1rem;
+    font-size:var(--big-font);
+  }
+  .sidebar{
+    display:flex;
+    background-color:var(--navbar-color);
+    right:0;
+    position:fixed;
+    height:50%;
+    width:25%;
+    padding:1rem;
+    border-radius:1rem;
+    margin-right:1rem;
+    margin-top:0;
+  }
+  .mainbar{
+    display:none;
+  }
+  .hamburger{
+    background-color:var(--navbar-color);
+    color:var(--text-color);
+    padding:0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-right:1rem;
+    border-style:none;
+  }
+  nav a:hover{
+    color:var(--accent-color);
+    transition: 0.3s ease-in-out;
+  }
+  nav ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-content:center;
+  }
+  .container {
+    margin: 0.6rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  }
+  label{
+    font-size:var(--p-font);
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"],input[type="password"] {
+    width:20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size:var(--p-font);
+  }
+  
+  input[type="submit"] {
+    padding: 1rem;
+    margin:1rem;
+    background-color:var(--accent-color) ;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: var(--p-font);
+  }
+  input[type="submit"]:hover {
+    border-style:solid;
+    border-width:0.1rem;
+    transition: 0.3s ease-in;
+  }
+
+
+
+  
+  
+  @media (min-width: 950px){
+    .heading{
+      justify-content:center;
+    }
+    .hamburger{
+      display:none;
+    }
+    .mainbar{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+  }
